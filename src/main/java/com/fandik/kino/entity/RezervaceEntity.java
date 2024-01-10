@@ -18,11 +18,11 @@ public class RezervaceEntity {
     private Long id;
 
     @NotNull
-    @ManyToOne(cascade = CascadeType.REMOVE)
+    @ManyToOne
     private UzivatelEntity uzivatel;
 
     @NotNull
-    @ManyToOne(cascade = CascadeType.REMOVE)
+    @ManyToOne
     private PredstaveniEntity predstaveni;
 
     @NotNull
