@@ -33,4 +33,12 @@ public class RezervaceService {
     public void deleteById(Long id) {
         rezervaceRepository.deleteById(id);
     }
+
+    public List<RezervaceEntity> findByUzivatelId(Long id) {
+        return rezervaceRepository.findByUzivatelId(id);
+    }
+
+    public Optional<RezervaceEntity> findByUzivatelIdAndId(Long uzivatelId, Long id) {
+        return rezervaceRepository.findByUzivatelIdAndId(uzivatelId, id);
+    }
 }
